@@ -28,7 +28,7 @@ class AirthematicView extends StatelessWidget {
                 decoration: const InputDecoration(
                   labelText: "First Number",
                   border: OutlineInputBorder(),
-                  prefixIcon: Icon(Icons.looks_one),
+                  // prefixIcon: Icon(Icons.looks_one),
                 ),
               ),
               const SizedBox(height: 16),
@@ -38,12 +38,11 @@ class AirthematicView extends StatelessWidget {
                 decoration: const InputDecoration(
                   labelText: "Second Number",
                   border: OutlineInputBorder(),
-                  prefixIcon: Icon(Icons.looks_two),
+                  // prefixIcon: Icon(Icons.looks_two),
                 ),
               ),
 
               const SizedBox(height: 30),
-
               // Result display
               BlocBuilder<AirthmeticCubit, int>(
                 builder: (context, state) {
@@ -75,7 +74,7 @@ class AirthematicView extends StatelessWidget {
                           int.parse(secondController.text));
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.green,
+                      backgroundColor: Colors.amber,
                       padding: const EdgeInsets.symmetric(
                           horizontal: 24, vertical: 12),
                     ),
@@ -89,7 +88,7 @@ class AirthematicView extends StatelessWidget {
                           int.parse(secondController.text));
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.orange,
+                      backgroundColor: Colors.amber,
                       padding: const EdgeInsets.symmetric(
                           horizontal: 24, vertical: 12),
                     ),
@@ -103,7 +102,7 @@ class AirthematicView extends StatelessWidget {
                           int.parse(secondController.text));
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blue,
+                      backgroundColor: Colors.amber,
                       padding: const EdgeInsets.symmetric(
                           horizontal: 24, vertical: 12),
                     ),
@@ -117,7 +116,7 @@ class AirthematicView extends StatelessWidget {
                           int.parse(secondController.text));
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.red,
+                      backgroundColor: Colors.amber,
                       padding: const EdgeInsets.symmetric(
                           horizontal: 24, vertical: 12),
                     ),

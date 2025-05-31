@@ -22,7 +22,4 @@ class ArithematicModel {
   double div (){
     return first / second ;
   }
-
-
-
 }
